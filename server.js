@@ -1,51 +1,54 @@
 const http = require('http');
+const fs = require('fs');
+const path = require('path');
 
 const port = process.env.PORT || 3000;
 
+const mimeTypes = {
+    '.html': 'text/html',
+    '.css': 'text/css',
+    '.js': 'application/javascript',
+    '.json': 'application/json',
+    '.png': 'image/png',
+    '.jpg': 'image/jpeg',
+    '.gif': 'image/gif',
+    '.svg': 'image/svg+xml',
+    '.ico': 'image/x-icon'
+};
+
 const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.end(`
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>RMC Cultural Footstep</title>
-        <style>
-          body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          }
-          .container {
-            text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-          }
-          h1 {
-            color: #333;
-            margin: 0 0 20px 0;
-          }
-          p {
-            color: #666;
-            font-size: 16px;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="container">
-          <h1>RMC Cultural Footstep</h1>
-          <p>Welcome! Your application is now running.</p>
-        </div>
-      </body>
-    </html>
-  `);
+    let filePath = '.' + req.url;
+    if (filePath === './') {
+        filePath = './index.html';
+    }
+
+    const ext = path.extname(filePath).toLowerCase();
+    const contentType = mimeTypes[ext] || 'text/plain';
+
+    fs.readFile(filePath, (err, content) => {
+        if (err) {
+            if (err.code === 'ENOENT') {
+                // File not found, serve index.html for SPA routing
+                fs.readFile('./index.html', (error, data) => {
+                    if (error) {
+                        res.writeHead(500, { 'Content-Type': 'text/plain' });
+                        res.end('500 - Internal Server Error');
+                        return;
+                    }
+                    res.writeHead(200, { 'Content-Type': 'text/html' });
+                    res.end(data);
+                });
+            } else {
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('500 - Internal Server Error');
+            }
+        } else {
+            res.writeHead(200, { 'Content-Type': contentType });
+            res.end(content, 'utf-8');
+        }
+    });
 });
 
 server.listen(port, () => {
-  console.log('Server running at http://localhost:' + port + '/');
+    console.log(`Server running at http://localhost:${port}/`);
 });
