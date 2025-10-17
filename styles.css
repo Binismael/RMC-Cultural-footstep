@@ -299,6 +299,18 @@ a {
     box-shadow: var(--shadow-medium);
 }
 
+.hero-img,
+.about-img,
+.package-img,
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: var(--shadow-medium);
+    display: block;
+}
+
 .image-placeholder-large {
     width: 100%;
     height: 100%;
