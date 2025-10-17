@@ -708,8 +708,9 @@ a {
     background-color: var(--bg-cream);
 }
 
-/* Featured Osogbo Section */
-.featured-osogbo {
+/* Featured Sections (Osogbo & Erin Ijesha) */
+.featured-osogbo,
+.featured-erin-ijesha {
     margin-bottom: 80px;
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards;
