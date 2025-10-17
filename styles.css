@@ -791,6 +791,10 @@ a {
     animation-delay: 0.4s;
 }
 
+.featured-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
 .featured-item:hover {
     border-color: var(--primary-gold);
     box-shadow: var(--shadow-medium);
