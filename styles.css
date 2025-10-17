@@ -1393,6 +1393,35 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .featured-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .featured-item {
+        height: 200px;
+    }
+
+    .featured-hero {
+        margin-bottom: 25px;
+    }
+
+    .featured-img {
+        height: 300px;
+    }
+
+    .featured-info {
+        padding: 25px 15px 15px;
+    }
+
+    .featured-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .featured-info p {
+        font-size: 0.9rem;
+    }
+
     .gallery-image {
         height: 200px;
     }
