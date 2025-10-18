@@ -137,7 +137,7 @@ a {
     color: var(--text-white);
 }
 
-.btn-large {
+.btn-lg {
     padding: 16px 48px;
     font-size: 1rem;
     width: 100%;
