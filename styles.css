@@ -1443,7 +1443,7 @@ a {
     }
 
     .featured-item {
-        height: 200px;
+        height: 160px;
     }
 
     .featured-hero {
@@ -1451,7 +1451,7 @@ a {
     }
 
     .featured-img {
-        height: 300px;
+        height: 280px;
     }
 
     .featured-info {
@@ -1467,7 +1467,7 @@ a {
     }
 
     .gallery-image {
-        height: 200px;
+        height: 160px;
     }
 
     .signup-card {
@@ -1481,6 +1481,13 @@ a {
     .section-title {
         font-size: 1.6rem;
         margin-bottom: 2rem;
+    }
+
+    .objective-card,
+    .benefit-card,
+    .experience-card {
+        min-height: auto;
+        padding: 25px 15px;
     }
 
     .floating-cta {
