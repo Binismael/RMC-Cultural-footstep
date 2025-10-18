@@ -124,6 +124,7 @@ a {
 .btn-primary:hover {
     background-color: #C19B1D;
     box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
 }
 
 .btn-outline {
@@ -135,6 +136,8 @@ a {
 .btn-outline:hover {
     background-color: var(--primary-brown);
     color: var(--text-white);
+    box-shadow: var(--shadow-light);
+    transform: translateY(-2px);
 }
 
 .btn-lg {
@@ -196,9 +199,9 @@ a {
     bottom: -5px;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     background-color: var(--primary-gold);
-    transition: var(--transition);
+    transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
@@ -436,6 +439,7 @@ a {
 .objective-card:hover {
     border-color: var(--primary-gold);
     box-shadow: var(--shadow-medium);
+    transform: translateY(-4px);
 }
 
 .card-icon {
@@ -499,6 +503,7 @@ a {
 .experience-card:hover {
     border-color: var(--primary-gold);
     box-shadow: var(--shadow-medium);
+    transform: translateY(-4px);
 }
 
 .experience-icon {
@@ -544,6 +549,7 @@ a {
 
 .carousel-button:hover {
     background-color: #C19B1D;
+    transform: scale(1.08);
 }
 
 /* ==========================================
@@ -696,6 +702,7 @@ a {
 .benefit-card:hover {
     border-color: var(--primary-gold);
     box-shadow: var(--shadow-medium);
+    transform: translateY(-4px);
 }
 
 .benefit-icon {
@@ -874,6 +881,7 @@ a {
 .gallery-item:hover {
     border-color: var(--primary-gold);
     box-shadow: var(--shadow-medium);
+    transform: translateY(-4px);
 }
 
 .gallery-image {
@@ -1145,6 +1153,8 @@ a {
 .social-link:hover {
     background-color: var(--primary-brown);
     color: var(--text-white);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
 }
 
 /* ==========================================
