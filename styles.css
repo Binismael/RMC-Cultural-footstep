@@ -95,7 +95,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
     width: 60px;
-    height: 2px;
+    height: 3px;
     background-color: var(--primary-gold);
 }
 
@@ -419,6 +419,10 @@ a {
     transition: var(--transition);
     opacity: 0;
     animation: fadeInUp 0.6s ease forwards;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .objective-card:nth-child(2) {
@@ -483,7 +487,7 @@ a {
     text-align: center;
     background: var(--text-white);
     border-radius: 8px;
-    min-height: 320px;
+    min-height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -667,6 +671,10 @@ a {
     transition: var(--transition);
     opacity: 0;
     animation: fadeInUp 0.6s ease forwards;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .benefit-card:nth-child(1) {
@@ -843,6 +851,7 @@ a {
     border: 1px solid var(--border-light);
     opacity: 0;
     animation: fadeInUp 0.6s ease forwards;
+    height: 100%;
 }
 
 .gallery-item:nth-child(1) {
@@ -919,7 +928,7 @@ a {
     background: var(--text-white);
     padding: 2rem;
     border-radius: 8px;
-    border: 1px solid var(--border-light);
+    border: 2px solid var(--primary-gold);
 }
 
 .partner-benefits h3 {
