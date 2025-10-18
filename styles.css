@@ -773,6 +773,10 @@ a {
     grid-template-columns: repeat(5, 1fr);
 }
 
+.featured-ile-ife .featured-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .featured-item {
     border-radius: 8px;
     overflow: hidden;
