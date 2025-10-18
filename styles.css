@@ -795,7 +795,7 @@ a {
     height: 250px;
     box-shadow: var(--shadow-light);
     transition: var(--transition);
-    border: 1px solid var(--border-light);
+    border: 2px solid var(--border-light);
     opacity: 0;
     animation: fadeInUp 0.6s ease forwards;
 }
@@ -823,6 +823,7 @@ a {
 .featured-item:hover {
     border-color: var(--primary-gold);
     box-shadow: var(--shadow-medium);
+    transform: translateY(-4px);
 }
 
 .featured-item img {
@@ -961,9 +962,10 @@ a {
     padding: 60px;
     background-color: var(--bg-cream);
     border-radius: 8px;
-    border: 1px solid var(--border-light);
+    border: 2px solid var(--primary-gold);
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards;
+    box-shadow: var(--shadow-light);
 }
 
 .signup-card h2 {
@@ -1011,7 +1013,8 @@ a {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-gold);
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+    background-color: rgba(212, 175, 55, 0.02);
 }
 
 .form-message {
@@ -1170,6 +1173,7 @@ a {
     color: var(--primary-gold);
     margin-bottom: 1.2rem;
     font-size: 1rem;
+    font-weight: 700;
 }
 
 .footer-section p {
@@ -1221,7 +1225,7 @@ a {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.9rem;
     box-shadow: var(--shadow-medium);
     transition: var(--transition);
     z-index: 50;
@@ -1232,6 +1236,8 @@ a {
 
 .floating-cta:hover {
     background-color: #C19B1D;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
 /* ==========================================
