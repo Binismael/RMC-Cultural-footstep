@@ -1,6 +1,6 @@
 /* ==========================================
    RMC CULTURAL FOOTPRINTS - PREMIUM DESIGN
-   Elegant • Minimal • Professional
+   Elegant • Minimal ��� Professional
    ========================================== */
 
 :root {
@@ -52,11 +52,13 @@ h1 {
 h2 {
     font-size: 2.5rem;
     color: var(--primary-brown);
+    font-weight: 700;
 }
 
 h3 {
     font-size: 1.3rem;
     color: var(--primary-brown);
+    font-weight: 700;
 }
 
 p {
@@ -86,6 +88,8 @@ a {
     position: relative;
     opacity: 0;
     animation: fadeIn 0.8s ease forwards;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .section-title::after {
@@ -363,6 +367,7 @@ a {
 
 .about-image:hover .about-img {
     transform: scale(1.05);
+    filter: brightness(1.05);
 }
 
 .about-content {
@@ -376,6 +381,7 @@ a {
 
 .about-content p {
     margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
 
 .about-icons {
@@ -586,12 +592,13 @@ a {
 }
 
 .package-list li {
-    padding: 14px 0;
+    padding: 12px 0;
     font-size: 0.95rem;
     color: var(--text-dark);
     border-bottom: 1px solid var(--border-light);
     opacity: 0;
     animation: fadeIn 0.8s ease forwards;
+    transition: var(--transition);
 }
 
 .package-list li:nth-child(1) {
@@ -628,6 +635,11 @@ a {
 
 .package-list li:last-child {
     border-bottom: none;
+}
+
+.package-list li:hover {
+    color: var(--primary-gold);
+    padding-left: 8px;
 }
 
 .package-note {
@@ -843,6 +855,7 @@ a {
 
 .featured-item:hover img {
     transform: scale(1.08);
+    filter: brightness(1.08);
 }
 
 .gallery-grid {
@@ -953,6 +966,19 @@ a {
     padding: 10px 0;
     font-size: 0.95rem;
     color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.partner-benefits li::before {
+    content: '✓ ';
+    color: var(--primary-gold);
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.partner-benefits li:hover {
+    padding-left: 8px;
+    color: var(--primary-brown);
 }
 
 /* ==========================================
@@ -1103,10 +1129,12 @@ a {
 .contact-item a {
     color: var(--primary-gold);
     font-weight: 600;
+    transition: var(--transition);
 }
 
 .contact-item a:hover {
     color: var(--primary-brown);
+    text-decoration: underline;
 }
 
 .message-form {
@@ -1208,6 +1236,7 @@ a {
 
 .footer-section a:hover {
     color: var(--primary-gold);
+    text-decoration: underline;
 }
 
 .footer-bottom {
