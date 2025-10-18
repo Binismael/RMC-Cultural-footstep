@@ -1,0 +1,13 @@
+{
+  "name": "rmc-cultural-footstep",
+  "version": "1.0.0",
+  "description": "RMC Cultural Footstep Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
