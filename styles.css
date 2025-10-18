@@ -4,18 +4,23 @@
    ========================================== */
 
 :root {
-    --primary-gold: #D4AF37;
-    --primary-brown: #6B4423;
+    --primary-gold: #E8A900;
+    --primary-brown: #8B4513;
+    --primary-terracotta: #C85A2D;
+    --primary-burgundy: #7D1835;
     --secondary-dark: #1a1a1a;
-    --accent-warm: #8B6F47;
+    --accent-warm: #D4533F;
+    --accent-teal: #1B7A78;
+    --accent-vibrant: #E74C3C;
     --bg-cream: #F9F7F3;
-    --text-dark: #2a2a2a;
+    --bg-warm: #FFF5E6;
+    --text-dark: #2c1810;
     --text-gray: #5a5a5a;
     --text-white: #ffffff;
-    --border-light: #E8E4DD;
-    --shadow-light: 0 2px 12px rgba(0, 0, 0, 0.05);
-    --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.1);
-    
+    --border-light: #E8D9C8;
+    --shadow-light: 0 2px 12px rgba(200, 90, 45, 0.08);
+    --shadow-medium: 0 8px 24px rgba(200, 90, 45, 0.15);
+
     --font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --transition: all 0.3s ease;
 }
