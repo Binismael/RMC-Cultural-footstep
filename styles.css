@@ -1,6 +1,6 @@
 /* ==========================================
    RMC CULTURAL FOOTPRINTS - PREMIUM DESIGN
-   Elegant • Minimal ��� Professional
+   Elegant • Minimal • Professional
    ========================================== */
 
 :root {
@@ -1034,7 +1034,7 @@ a {
 .form-group input,
 .form-group textarea {
     padding: 12px 14px;
-    border: 1px solid var(--border-light);
+    border: 2px solid var(--border-light);
     border-radius: 4px;
     font-family: var(--font-family);
     font-size: 0.95rem;
