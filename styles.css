@@ -1347,16 +1347,23 @@ a {
     }
 
     .gallery-image {
-        height: 200px;
+        height: 180px;
     }
 
     .featured-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 15px;
     }
 
     .featured-item {
-        height: 200px;
+        height: 180px;
+    }
+
+    .objective-card,
+    .benefit-card,
+    .experience-card {
+        min-height: auto;
+        padding: 35px 25px;
     }
 
     .featured-hero {
