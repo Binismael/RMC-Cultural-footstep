@@ -224,6 +224,7 @@ a {
 .nav-cta:hover {
     background-color: #C19B1D;
     box-shadow: var(--shadow-light);
+    transform: translateY(-2px);
 }
 
 .menu-toggle {
@@ -255,7 +256,7 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
-    min-height: 600px;
+    min-height: 620px;
 }
 
 .hero-content {
@@ -291,6 +292,7 @@ a {
     align-items: center;
     opacity: 0;
     animation: fadeInUp 0.8s ease 0.2s forwards;
+    position: relative;
 }
 
 .image-placeholder {
@@ -316,6 +318,11 @@ a {
     border-radius: 8px;
     box-shadow: var(--shadow-medium);
     display: block;
+    transition: transform 0.6s ease;
+}
+
+.hero-image:hover .hero-img {
+    transform: scale(1.02);
 }
 
 .image-placeholder-large {
@@ -335,6 +342,7 @@ a {
 .about-section {
     padding: 100px 40px;
     background-color: var(--text-white);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .about-grid {
@@ -411,6 +419,7 @@ a {
 .objectives-section {
     padding: 100px 40px;
     background-color: var(--bg-cream);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .objectives-grid {
@@ -469,6 +478,7 @@ a {
 .experience-section {
     padding: 100px 40px;
     background-color: var(--text-white);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .experience-carousel {
@@ -565,6 +575,7 @@ a {
 .package-section {
     padding: 100px 40px;
     background-color: var(--bg-cream);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .package-grid {
@@ -672,6 +683,7 @@ a {
 .benefits-section {
     padding: 100px 40px;
     background-color: var(--text-white);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .benefits-grid {
@@ -733,6 +745,7 @@ a {
 .gallery-section {
     padding: 100px 40px;
     background-color: var(--bg-cream);
+    border-bottom: 1px solid var(--border-light);
 }
 
 /* Featured Sections (Osogbo & Erin Ijesha) */
@@ -927,6 +940,7 @@ a {
     padding: 100px 40px;
     background-color: #F4EFE6;
     text-align: center;
+    border-bottom: 1px solid var(--border-light);
 }
 
 .partners-content {
@@ -988,6 +1002,7 @@ a {
 .signup-section {
     padding: 100px 40px;
     background-color: var(--text-white);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .signup-card {
@@ -1081,6 +1096,7 @@ a {
 .contact-section {
     padding: 100px 40px;
     background-color: var(--bg-cream);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .contact-grid {
